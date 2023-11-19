@@ -1,0 +1,174 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My code! */
+html {
+    
+   
+    background-color: black;
+}
+
+body {
+    min-width:485px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+
+h1 {
+    background-color: #fff;
+    /* width: fit-content; */
+    padding: 10px;
+    text-align: center;
+    color: #007d7b;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 20px;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+/* Verbage */
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+section p {
+    font-size: 1.25em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+
+/* Photos */
+
+
+li:nth-of-type(4) {
+    border: 2px solid red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+}
+
+li {
+   
+}
+
+/* */
+ main {
+    background-color: #fff;
+ }
+figure {
+    position: relative;
+}
+ figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+ }
+
+ figcaption:nth-of-type(1){
+    color: white;
+ }
+
+ figure img {
+    width: 100%;
+ }
+
+.photos_container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Contact Page */
+
+#Contact {
+    color: #fff;
+}
+
+@media (min-width: 880px){
+    .photos_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
