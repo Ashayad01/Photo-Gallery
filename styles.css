@@ -123,14 +123,12 @@ section p {
 /* Photos */
 
 li:nth-of-type(4) {
-    border: 2px solid red;
     position: fixed;
     bottom: 0;
     right: 0;
     background-color: #000;
 }
 
-/* */
 .photos_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -139,20 +137,23 @@ li:nth-of-type(4) {
 figure {
     position: relative;
 }
- figcaption {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: bold;
- }
 
- figcaption:nth-of-type(1){
-    color: white;
- }
+ figcaption {
+    line-height:2em;
+    text-align: center;
+    position:relative;
+    bottom:40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+.white {
+    color: #fff;
+}
+
+.up {
+    bottom: 90%;
+}
 
  figure img {
     display: block;
@@ -165,27 +166,48 @@ figure {
 
 /* Contact Page */
 
-h2:last-of-type {
-    color: #fff;
+#contact h2{
+    color:#fff
 }
 
-p:last-of-type {
+#contact p {
     color: #fff;
     text-align: center;
 }
 
-form {
-
-}
+/* form {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+} */
 
 label {
     color: #fff;
+    text-transform: uppercase;
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
+.btn {
+    background-color: #007d7b;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+}
 
+/* Media Queries */
 @media (min-width: 880px){
     .photos_container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
+@media (min-width: 1300px){
+    .photos_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
