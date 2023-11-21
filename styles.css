@@ -96,6 +96,12 @@ ul {
     list-style-type: none;
     gap: 20px;
 }
+
+/* Main Content */
+main {
+    background-color: #fff;
+ }
+
 /* Verbage */
 
 h2 {
@@ -116,7 +122,6 @@ section p {
 
 /* Photos */
 
-
 li:nth-of-type(4) {
     border: 2px solid red;
     position: fixed;
@@ -125,14 +130,12 @@ li:nth-of-type(4) {
     background-color: #000;
 }
 
-li {
-   
+/* */
+.photos_container {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-/* */
- main {
-    background-color: #fff;
- }
 figure {
     position: relative;
 }
@@ -152,19 +155,33 @@ figure {
  }
 
  figure img {
-    width: 100%;
- }
-
-.photos_container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
 }
+
+
 
 /* Contact Page */
 
-#Contact {
+h2:last-of-type {
     color: #fff;
 }
+
+p:last-of-type {
+    color: #fff;
+    text-align: center;
+}
+
+form {
+
+}
+
+label {
+    color: #fff;
+}
+
 
 @media (min-width: 880px){
     .photos_container {
