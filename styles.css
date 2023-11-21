@@ -58,6 +58,7 @@ html {
 
 body {
     /* min-width:485px; */
+    position: relative;
     max-width: 1300px;
     margin: 0 auto;
     background-color: #000;
@@ -115,6 +116,7 @@ h2 {
 section p {
     font-size: 1.25em;
     margin-top: 15px;
+    margin-left: 10px;
     margin-bottom: 15px;
     line-height: 30px;
 }
@@ -137,6 +139,7 @@ li:nth-of-type(4) {
 
 figure {
     position: relative;
+    padding: 10px;
 }
 
  figcaption {
@@ -160,12 +163,15 @@ figure {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 100%;
 }
 
 
 
 /* Contact Page */
+#contact{ 
+    padding:10px;
+}
 
 #contact h2{
     color:#fff
@@ -179,7 +185,7 @@ figure {
 form {
     display: grid;
     grid-template-columns: 1fr;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -217,12 +223,30 @@ footer {
     .photos_container {
         grid-template-columns: 1fr 1fr;
     }
+    
+    form {
+        width: 65%;
+    }
+
+    li:nth-of-type(4){
+        display: none;
+        visibility: none;
+    }
 }
 
 @media (min-width: 1300px){
     nav{
         justify-content: right;
 
+    }
+
+    li:nth-of-type(4){
+        display: none;
+        visibility: none;
+    }
+
+    form{
+        width: 65%;
     }
 
     .photos_container {
