@@ -124,6 +124,7 @@ section p {
 
 li:nth-of-type(4) {
     position: fixed;
+    border: solid #fff;
     bottom: 0;
     right: 0;
     background-color: #000;
@@ -186,7 +187,7 @@ form {
 label {
     color: #fff;
     text-transform: uppercase;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-top: 20px;
 }
 
@@ -195,12 +196,11 @@ label {
     color:#fff;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 10px;
     padding: 10px;
     border: none;
     border-radius: 12px;
     width: 75%;
-    margin: 0 auto;
+    margin: 20px auto 50px;
 }
 input::placeholder {
     color: #007d7b;
@@ -210,7 +210,7 @@ input::placeholder {
 
 footer {
     color: #fff;
-    margin: 0 auto;
+    text-align: center;
 }
 /* Media Queries */
 @media (min-width: 880px){
@@ -220,6 +220,11 @@ footer {
 }
 
 @media (min-width: 1300px){
+    nav{
+        justify-content: right;
+
+    }
+
     .photos_container {
         grid-template-columns: 1fr 1fr 1fr;
     }
