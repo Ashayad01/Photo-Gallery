@@ -208,6 +208,11 @@ label {
     width: 75%;
     margin: 20px auto 50px;
 }
+
+input {
+    padding: 5px;
+}
+
 input::placeholder {
     color: #007d7b;
     font-weight: bold;
@@ -223,7 +228,7 @@ footer {
     .photos_container {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     form {
         width: 65%;
     }
