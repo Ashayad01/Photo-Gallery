@@ -57,7 +57,7 @@ html {
 }
 
 body {
-    min-width:485px;
+    /* min-width:485px; */
     max-width: 1300px;
     margin: 0 auto;
     background-color: #000;
@@ -175,11 +175,13 @@ figure {
     text-align: center;
 }
 
-/* form {
+form {
     display: grid;
     grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
     
-} */
+}
 
 label {
     color: #fff;
@@ -197,8 +199,19 @@ label {
     padding: 10px;
     border: none;
     border-radius: 12px;
+    width: 75%;
+    margin: 0 auto;
+}
+input::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
+footer {
+    color: #fff;
+    margin: 0 auto;
+}
 /* Media Queries */
 @media (min-width: 880px){
     .photos_container {
